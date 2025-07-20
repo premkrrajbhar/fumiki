@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fumiki</title>
+
+    <!-- ============ Favicon ============  -->
+    <link rel="shortcut icon" href="assets/favicon/fumiki-favicon.png" type="image/png">
+
+    <!-- ============ Meta Tags ============  -->
+    <meta name="description"
+        content="Fumiki is a simple guide to Markdown syntax. Learn how to format text and write clear, structured README files for your projects.">
+    <meta name="keywords"
+        content="Markdown guide, Markdown syntax, README file, how to write README, Markdown tutorial, GitHub Markdown, Markdown formatting, Markdown examples, Markdown reference, write documentation, Fumiki">
+
+    <meta name="robots" content="index, follow">
+    <meta name="version" content="v2.1.2">
+
+    <!-- ============ Open Graph Tags ============  -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://premkrrajbhar.github.io/fumiki/">
+    <meta property="og:title" content="Fumiki – Learn Markdown & Write Better README Files">
+    <meta property="og:description"
+        content="Master Markdown syntax and write effective README files with Fumiki. A clean and easy-to-follow guide for developers and writers.">
+    <meta property="og:site_name" content="Fumiki">
+
+    <!-- ============ Open Graph Tags ============  -->
+    <meta name="twitter:title" content="Fumiki – Learn Markdown & Write Better README Files">
+    <meta name="twitter:description"
+        content="Explore Markdown formatting and learn how to create professional README files with Fumiki.">
+
+    <!-- ============ Bootstrap CSS ============  -->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+
+
+    <!-- ============ Fontawesome CSS ============  -->
+    <link rel="stylesheet" href="styles/fontawesome.css">
+
+    <!-- ============ Webslidemenu CSS ============  -->
+    <link rel="stylesheet" href="styles/webslidemenu.css">
+    <link rel="stylesheet" href="styles/webslidemenu02.css">
+    <link rel="stylesheet" href="styles/white-red.css">
+
+    <!-- ============ Custom CSS ============  -->
+    <link rel="stylesheet" href="styles/main.css">
+
+
+</head>
+
+<body>
+
+    <!-- ======================================== Header Section Start ======================================== -->
+    <header>
+        <!-- Mobile Header -->
+        <div class="wsmobileheader clearfix">
+            <a id="wsnavtoggle" class="wsanimated-arrow d-block d-lg-none"><span></span></a>
+
+            <span class="navbarContainer">
+                <img src="assets/images/markdown-logo.png" class="img-fluid" alt="markdown Logo">
+                <a href="#">Fumiki</a>
+            </span>
+        </div>
+        <!-- Mobile Header -->
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <nav class="wsmenu clearfix">
+            <ul class="wsmenu-list">
+
+                <li class="leftlogo">
+                    <img src="assets/images/markdown-logo.png" class="img-fluid sideBarLogo" alt="markdown logo">
+                    <p class="para">Fumiki</p>
+                    <p class="tagLine"><em>Where Documentation Begins</em></p>
+                </li>
+
+                <li aria-haspopup="true"><a href="#" class="active"><i class="fa-solid fa-book-open"></i>Introduction<span class="wsarrow"></span></a>
+                    <ul class="sub-menu">
+                        <li aria-haspopup="true"><a href="#whatisMarkdown"><i class="fas fa-angle-right"></i>What is
+                                Markdown </a>
+                        </li>
+                        <li aria-haspopup="true"><a href="#whyuseMarkdown"><i class="fas fa-angle-right"></i>Why use
+                                Markdown</a></li>
+                        <li aria-haspopup="true"><a href="#benefitsMarkdown"><i class="fas fa-angle-right"></i>Benefits
+                                of
+                                using
+                                Markdown</a>
+                        </li>
+
+                    </ul>
+                </li>
+
+
+                <li aria-haspopup="true"><a href="#"><i class="fa-solid fa-gear"></i>Getting Started <span
+                            class="wsarrow"></span></a>
+                    <ul class="sub-menu">
+                        <li aria-haspopup="true"><a href="#headingsGuide"><i class="fas fa-angle-right"></i>Heading </a>
+                        </li>
+                        <li aria-haspopup="true"><a href="#paragraphsGuide"><i
+                                    class="fas fa-angle-right"></i>Paragraph</a>
+                        </li>
+                        <li aria-haspopup="true"><a href="#boldGuide"><i class="fas fa-angle-right"></i>Bold </a></li>
+                        <li aria-haspopup="true"><a href="#italicGuide"><i class="fas fa-angle-right"></i>Italic </a>
+                        </li>
+                        <li aria-haspopup="true"><a href="#boldItalicGuide"><i class="fas fa-angle-right"></i>Bold &
+                                Italic
+                            </a></li>
+                        <li aria-haspopup="true"><a href="#orderedListsGuide"><i class="fas fa-angle-right"></i>Ordered
+                                Lists </a></li>
+                        <li aria-haspopup="true"><a href="#unorderedListsGuide"><i
+                                    class="fas fa-angle-right"></i>Unordered
+                                Lists </a></li>
+                        <li aria-haspopup="true"><a href="#codeBlockGuide"><i class="fas fa-angle-right"></i>Code Block
+                            </a>
+                        </li>
+                        <li aria-haspopup="true"><a href="#horizontalLineGuide"><i
+                                    class="fas fa-angle-right"></i>Horizontal
+                                Line </a></li>
+                        <li aria-haspopup="true"><a href="#inlineLinksGuide"><i class="fas fa-angle-right"></i>Inline
+                                Links
+                            </a></li>
+                        <li aria-haspopup="true"><a href="#referenceLinksGuide"><i
+                                    class="fas fa-angle-right"></i>Reference
+                                Links </a></li>
+                        <li aria-haspopup="true"><a href="#linkingFileGuide"><i class="fas fa-angle-right"></i>Linking
+                                Files
+                            </a></li>
+                        <li aria-haspopup="true"><a href="#tableGuide"><i class="fas fa-angle-right"></i>Tables </a>
+                        </li>
+                        <li aria-haspopup="true"><a href="#taskListsGuide"><i class="fas fa-angle-right"></i>Task Lists
+                            </a>
+                        </li>
+                        <li aria-haspopup="true"><a href="#footNotesGuide"><i class="fas fa-angle-right"></i>Footnotes
+                            </a>
+                        </li>
+                        <li aria-haspopup="true"><a href="#mentionsGuide"><i class="fas fa-angle-right"></i>Mentions
+                            </a>
+                        </li>
+                        <li aria-haspopup="true"><a href="#emojisGuide"><i class="fas fa-angle-right"></i>Emojis </a>
+                        </li>
+                        <li aria-haspopup="true"><a href="#htmlinGuide"><i class="fas fa-angle-right"></i>HTML in
+                                Markdown
+                            </a>
+                        </li>
+                        <li aria-haspopup="true"><a href="#tableofContentGuide"><i class="fas fa-angle-right"></i>Table
+                                of
+                                Content </a>
+                        </li>
+                        <li aria-haspopup="true"><a href="#strikethroughGuide"><i
+                                    class="fas fa-angle-right"></i>Strikethrough </a></li>
+                        <li aria-haspopup="true"><a href="#commentsGuide"><i class="fas fa-angle-right"></i>Comments
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+
+                <li aria-haspopup="true"><a href="#"><i class="fa-solid fa-lightbulb"></i>About Fumiki <span
+                            class="wsarrow"></span></a>
+                    <div class="wsmegamenu halfdiv text-center">
+
+                        <h3 class="title text-center">Fumiki v1.0.0</h3>
+                        <p>An open source project that guides you to master Markdown syntax easily</p>
+                        <p class="navbar-Credit">Developed By <a href="https://github.com/premkrrajbhar"
+                                target="_blank">Prem Kumar Rajbhar</a></p>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- ======================================== Header Section End ======================================== -->
+
+
+    <!-- ======================================== Markdown Introduction Section Start ======================================== -->
+    <section class="markdown-Introduction">
+        <div class="container">
+
+            <!-- ========== What is Markdown ========== -->
+            <h2 id="whatisMarkdown">What is Markdown?</h2>
+
+            <p>Markdown is a lightweight markup language used to format plain text using simple, readable symbols.
+                Created by <a href="https://en.wikipedia.org/wiki/John_Gruber"
+                    title="click here to know more information about John Gruber">John Gruber</a> in 2004, Markdown used
+                by software developers, programmers, and computer science students, Markdown is almost unavoidable, it
+                powers the README files on GitHub, API documentation, changelogs, and developer blogs. Its syntax is
+                minimal, yet powerful enough to structure complex technical documents without the need for HTML or Word
+                like editors.</p>
+
+
+            <p>You can use <code class="codeBox">#</code> for headings, <code class="codeBox">*</code> for bullet
+                points, backticks for code, and more.
+                all using just your keyboard. This makes Markdown perfect for developers who spend most of their time in
+                code editors or terminals. It keeps your hands on the keyboard and your content structured.</p>
+
+            <div class="imgContainer">
+                <img src="assets/images/whatisMarkdown1-img.png" class="img-fluid" alt="markdown overview image">
+            </div>
+
+            <div class="noteContainer">
+                <p class="notePara">Whether you're building an open-source project or organizing your notes, Markdown
+                    gives you a clean, fast, and distraction-free way to write structured content.</p>
+            </div>
+
+            <!-- ========== Why use Markdown ========== -->
+            <h2 id="whyuseMarkdown">Why Use Markdown?</h2>
+
+            <p>If you're learning programming or already working in tech, you'll quickly discover that writing code
+                isn't the only thing that matters, you also need to write about your code and that's where Markdown
+                concept comes. It's used by developers to write clean documentation, create project READMEs, add release
+                notes and communicate clearly in collaborative environments like GitHub and GitLab.</p>
+
+            <div class="noteContainer">
+                <p class="notePara">In short, developers use Markdown to keep their documentation clean, versionable,
+                    and readable. Non-coders love it for its simplicity. If you're writing anything technical or even
+                    just taking notes, Markdown is the smart, modern choice.</p>
+            </div>
+
+            <!-- ========== Why use Markdown ========== -->
+            <h2 id="benefitsMarkdown">Benefits of Using Markdown</h2>
+
+            <p>Markdown provides huge value, especially to developers, programmers, and students in tech. One of its
+                biggest strengths is being lightweight. you’re simply writing plain text, which keeps files small, fast,
+                and perfect for version control with Git. This makes it ideal for GitHub repositories, where project
+                READMEs, changelogs, and contribution docs live.</p>
+
+            <div class="noteContainer">
+                <p class="notePara">if you’re learning or working in tech, Markdown isn’t just useful — it’s essential.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- ======================================== Markdown Introduction Section End ======================================== -->
+
+
+    <!-- ======================================== Main Section Start ======================================== -->
+    <main>
+        <section class="gettingStartedSection">
+            <div class="container">
+                <div class="row GuideContainer">
+
+                    <!-- ======= Left SideBar Appears on large screen ======= -->
+                    <div class="col-10 col-lg-3 d-none d-lg-block leftSideBar">
+                        <h5>Important Links</h5>
+
+                        <ul>
+                            <li><a href="#gettingStartedGuide">Getting Started!</a></li>
+                            <li><a href="#headingsGuide">Headings</a></li>
+                            <li><a href="#paragraphsGuide">Pargraphs</a></li>
+                            <li><a href="#boldGuide">Bold</a></li>
+                            <li><a href="#italicGuide">Italic</a></li>
+                            <li><a href="#boldItalicGuide">Bold & Italic</a></li>
+                            <li><a href="#orderedListsGuide">Ordered Lists</a></li>
+                            <li><a href="#unorderedListsGuide">Unordered Lists</a></li>
+                            <li><a href="#codeBlockGuide">Code Block</a></li>
+                            <li><a href="#horizontalLineGuide">Horizontal Line</a></li>
+                            <li><a href="#inlineLinksGuide">Inline Links</a></li>
+                            <li><a href="#referenceLinksGuide">Reference Links</a></li>
+                            <li><a href="#linkingFileGuide">Linking Files</a></li>
+                            <li><a href="#tableGuide">Tables</a></li>
+                            <li><a href="#taskListsGuide">Task Lists</a></li>
+                            <li><a href="#footNotesGuide">Foot Notes</a></li>
+                            <li><a href="#mentionsGuide">Mentions</a></li>
+                            <li><a href="#emojisGuide">Emojis</a></li>
+                            <li><a href="#htmlinGuide">HTML in Markdown</a></li>
+                            <li><a href="#tableofContentGuide">Table of Content</a></li>
+                            <li><a href="#strikethroughGuide">Strikethrough</a></li>
+                            <li><a href="#commentsGuide">Comments</a></li>
+
+                        </ul>
+                    </div>
+
+
+                    <!-- ======= Right Side Content on large screen ======= -->
+                    <div class="col-10 col-lg-7 rightContent">
+                        <h2 id="gettingStartedGuide">Getting Started!</h2>
+                        <p>In this section, we’ll explore Markdown syntax from basic to advanced. Whether you’re writing
+                            a simple note, a project README, or full documentation, understanding how to use Markdown
+                            properly will make your content clean, structured, and professional.</p>
+
+                        <!-- ======= Headings Guide ======= -->
+                        <h3 id="headingsGuide">Headings</h3>
+                        <p>We use <code class="codeBox">#</code> symbol to create headings, number of <code
+                                class="codeBox">#</code> symbol represents heading level, ranging from 1 (largest) and 6
+                            (smallest) in markdown.</p>
+
+                        <div class="textEditor">
+                            <code>
+                                <p><span class="blue">#</span> Heading 1</p>
+                                <p><span class="blue">##</span> Heading 2</p>
+                                <p><span class="blue">###</span> Heading 3</p>
+                                <p><span class="blue">####</span> Heading 4</p>
+                                <p><span class="blue">#####</span> Heading 5</p>
+                                <p><span class="blue">######</span> Heading 6</p>
+                            </code>
+                        </div>
+
+
+                        <!-- ======= Paragraph Guide ======= -->
+                        <h3 id="paragraphsGuide">Paragraphs</h3>
+                        <p>We write normally to create a paragraph and leave a blank line to start a new paragraph in
+                            markdown.</p>
+
+                        <div class="textEditor">
+                            <code>
+                                <p>Hello World, We are learning Markdown Syntax.</p>
+                                <p>Markdown syntax is very easy to learn.</p>
+                            </code>
+                        </div>
+
+
+                        <!-- ======= Bold Guide ======= -->
+                        <h3 id="boldGuide">Bold</h3>
+                        <p>We create bold text using double asterisk <code class="codeBox">**</code> or double
+                            underscore <code class="codeBox">__</code> in markdown.</p>
+
+                        <div class="textEditor">
+                            <code>
+                               <p><span class="blue">**</span>Hello World, This is Bold Text<span class="blue">**</span></p>
+                               <p><span class="blue">__</span>Hello World, I am Bold text too<span class="blue">__</span></p>
+                            </code>
+                        </div>
+
+
+                        <!-- ======= Italic Guide ======= -->
+                        <h3 id="italicGuide">Italic</h3>
+                        <p>We create italic text using single asterisk <code class="codeBox">*</code> or single
+                            underscore <code class="codeBox">_</code> in markdown.</p>
+
+                        <div class="textEditor">
+                            <code>
+                               <p><span class="blue">*</span>Hello World, This is Italic Text<span class="blue">*</span></p>
+                               <p><span class="blue">_</span>Hello World, I am Italic text too<span class="blue">_</span></p>
+                            </code>
+                        </div>
+
+
+                        <!-- ======= Bold and Italic Guide ======= -->
+                        <h3 id="boldItalicGuide">Bold & Italic</h3>
+                        <p>We create Bold & Italic text using triple asterisk <code class="codeBox">***</code> or triple
+                            underscore <code class="codeBox">___</code> in markdown.</p>
+
+                        <div class="textEditor">
+                            <code>
+                               <p><span class="blue">***</span>Hello World, This is Italic Text<span class="blue">***</span></p>
+                               <p><span class="blue">___</span>Hello World, I am Italic text too<span class="blue">___</span></p>
+                            </code>
+                        </div>
+
+
+                        <!-- ======= Ordered List Guide ======= -->
+                        <h3 id="orderedListsGuide">Ordered Lists</h3>
+                        <p>We use numbers i.e. <code class="codeBox">1.</code>, <code class="codeBox">2.</code>, <code
+                                class="codeBox">3.</code> etc to create ordered lists in markdown.</p>
+
+                        <div class="textEditor">
+                            <code>
+                                <p><span class="blue">1.</span> HTML</p>
+                                <p><span class="blue">2.</span> CSS</p>
+                                <p><span class="blue">2.</span> JavaScript</p>
+                            </code>
+                        </div>
+
+
+                        <!-- ======= Unordered List Guide ======= -->
+                        <h3 id="unorderedListsGuide">Unordered Lists</h3>
+                        <p>We use these symbols i.e. <code class="codeBox">-</code>, <code class="codeBox">*</code>,
+                            <code class="codeBox">+</code> etc to create unordered lists in markdown.
+                        </p>
+
+                        <div class="textEditor">
+                            <code>
+                               <p><span class="blue">-</span> HTML</p>
+                               <p><span class="blue">*</span> CSS</p>
+                               <p><span class="blue">+</span> JavaScript</p>
+                            </code>
+                        </div>
+
+
+                        <!-- ======= Code Block Guide ======= -->
+                        <h3 id="codeBlockGuide">Code Block</h3>
+                        <p>We use backticks i.e. <code class="codeBox">`</code> for line code blocks and triple
+                            backticks i.e. <code class="codeBox">```</code> for block code in markdown.</p>
+
+                        <div class="textEditor">
+                            <code>
+                              <p><span class="blue">`</span><span class="varCol">let</span> <span class="ident">markdownEle</span> = <span class="dataType">"Hello, I am inline code block"</span>;<span class="blue">`</span></p>
+                                
+                              <br>
+                              <p>
+                                <span class="blue">```</span>
+                                <p><span class="blue">function</span> blockCodeEle<span class="yellow">() {</span></p>
+                                <p><span class="blue">console</span>.log<span class="dataType">("Hey, I am Block Code Element")</span>;</p>
+                                <p><span class="yellow">}</span></p>
+                                <p>blockCodeEle<span class="yellow">()</span>;</p>
+                                <span class="blue">```</span>
+                              </p>
+                            </code>
+                        </div>
+
+
+                        <!-- ======= Horizontal Line Guide ======= -->
+                        <h3 id="horizontalLineGuide">Horizontal Line</h3>
+                        <p>We use three or more dashes <code class="codeBox">---</code>, asterisk <code
+                                class="codeBox">***</code> or underscore <code class="codeBox">___</code> to create a
+                            horizontal line in markdown.</p>
+
+                        <div class="textEditor">
+                            <code>
+                               <p>There is a horizontal line below using dashes</p>
+                               <p><span class="blue">---</span></p>
+                               <p>There is a horizontal line below using asterisk</p>
+                               <p><span class="blue">***</span></p>
+                               <p>There is a horizontal line below using underscore</p>
+                               <p><span class="blue">___</span></p>
+                            </code>
+                        </div>
+
+
+                        <!-- ======= Inline Links Guide ======= -->
+                        <h3 id="inlineLinksGuide">Inline Links</h3>
+                        <p>We use <code class="codeBox">[text](url)</code> to create inline links in markdown.</p>
+
+                        <div class="textEditor">
+                            <code>
+                               <p><span class="blue">[</span>Google<span class="blue">]</span><span class="blue">(</span>https://www.google.com/<span class="blue">)</span></p>
+                            </code>
+                        </div>
+
+                        <!-- ======= Reference Links Guide ======= -->
+                        <h3 id="referenceLinksGuide">Reference Links</h3>
+                        <p>We use <code class="codeBox">[text](reference)</code> to create reference links in markdown.
+                        </p>
+
+                        <div class="textEditor">
+                            <code>
+                               <p><span class="blue">[</span>Goole<span class="blue">]</span><span class="blue">[</span>1<span class="blue">]</span></p>
+                               <p><span class="blue">[</span>1<span class="blue">]</span>: https://www.google.com/</p>
+                            </code>
+                        </div>
+
+
+                        <!-- ======= Linking File Guide ======= -->
+                        <h3 id="linkingFileGuide">Linking Files</h3>
+                        <p>We use standard markdown link syntax i.e. <code class="codeBox">[link Text](filepath)</code>
+                            with the file path or URL to link a file path in markdown.
+                        </p>
+
+                        <div class="textEditor">
+                            <code>
+                               <p><span class="blue">[</span>Download PDF Guide<span class="blue">](</span>assets/guide.pdf<span class="blue">)</span></p>
+                               <p><span class="blue">[</span>Download Project Brief<span class="blue">](</span>files/project-brief.docx<span class="blue">)</span></p>
+                            </code>
+                        </div>
+
+
+                        <!-- ======= Tables Guide ======= -->
+                        <h3 id="tableGuide">Tables</h3>
+                        <p>We use pipes i.e. <code class="codeBox">|</code> and dashes i.e. <code
+                                class="codeBox">-</code> to create a table in markdown.</p>
+
+                        <div class="textEditor">
+                            <code>
+                               <pre>
+|   Items   |   Quantity(in KG) |   Price   |
+|-----------|-------------------|-----------|
+|   Apple   |   2kg             |   ₹100    |
+|   Mango   |   4Kg             |   ₹250    |
+|   Cherry  |   1kg             |   ₹80     |
+|   Banana  |   4kg             |   ₹120    |
+                               </pre>
+                            </code>
+                        </div>
+
+
+                        <!-- ======= Task Lists Guide ======= -->
+                        <h3 id="taskListsGuide">Task Lists</h3>
+                        <p>We use <code class="codeBox">- [ ]</code> for unchecked items and use <code
+                                class="codeBox">- [x]</code> for checked items in markdown.</p>
+
+                        <div class="textEditor">
+                            <code>
+                              <p><span class="blue">- [x]</span> Chant Shrimad Bhagavad Gita Daily</p>
+                              <p><span class="blue">- [x]</span> Chant Shri hanuman Chalisa Daily</p>
+                              <p><span class="blue">- [x]</span> Feed Cow Daily</p>
+                              <p><span class="blue">- [ ]</span> Respect Elders</p>
+                            </code>
+                        </div>
+
+                        <p class="note-Text"><i class="fa-solid fa-lightbulb"></i> Note: To view output of markdown, you
+                            have to install markdown preview extension in your visual studio code.</p>
+
+
+                        <!-- ======= Foot Notes Guide ======= -->
+                        <h3 id="footNotesGuide">Foot Notes</h3>
+                        <p>We use <code class="codeBox">[^identifier]</code> in the text and <code
+                                class="codeBox">[^identifier]:</code> for the footnote in markdown.</p>
+
+                        <div class="textEditor">
+                            <code>
+                               <p>This is the sentence with footnote<span class="blue">[^1]</span></p>
+                               <p><span class="blue">[^1]:</span> This is the footnote content.</p>
+                            </code>
+                        </div>
+
+
+                        <!-- ======= Mention Guide ======= -->
+                        <h3 id="mentionsGuide">Mentions</h3>
+                        <p>We use <code class="codeBox">@username</code> to mention github user in markdown.</p>
+
+                        <div class="textEditor">
+                            <code>
+                               <p>Hey, I am Prem Kumar Rajbhar, My username is <span class="blue">@premkrrajbhar</span> on Github.</p>
+                            </code>
+                        </div>
+
+                        <p class="note-Text"><i class="fa-solid fa-lightbulb"></i> <strong>Note:</strong> GitHub does
+                            not notify users
+                            when they are mentioned in a README.md file. Mentions are only clickable (link to profile),
+                            not notified.</p>
+
+
+                        <!-- ======= Emojis Guide ======= -->
+                        <h3 id="emojisGuide">Emojis</h3>
+                        <p>We use <code class="codeBox">:emoji_name:</code> or directly copy the emoji and paste in the
+                            markdown file.</p>
+
+                        <div class="textEditor">
+                            <code>
+                               <p>Hey Developers <span class="blue">:wave:</span>, How are you?</p>
+                               <p>I am here to guide you to learn markdown 😇</p>
+                            </code>
+                        </div>
+
+                        <!-- ======= HTML Tag in Markdown Guide ======= -->
+                        <h3 id="htmlinGuide">HTML in Markdown</h3>
+                        <p>Markdown supports HTML tag such as <code class="codeBox">details</code> and <code
+                                class="codeBox">summary</code> tag.</p>
+
+                        <div class="textEditor">
+                            <code class="htmlTag_Example">
+
+                                <details>
+                                    <summary>HTML</summary>
+                                    HyperText Markup Language
+                                </details>
+                               
+                            </code>
+                        </div>
+
+                        <p class="note-Text"><i class="fa-solid fa-lightbulb"></i> Note: If you don't know about detail
+                            and summary tag then you can learn it from <a
+                                href="https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/details"
+                                title="click here to learn about details and summary tag" target="_blank">mdn web doc
+                                website</a>.</p>
+
+
+                        <!-- ======= Table of Content Guide ======= -->
+                        <h3 id="tableofContentGuide">Table of Contents</h3>
+                        <p>We create a Table of Contents in Markdown by listing links with <code
+                                class="codeBox">[text](#anchor)</code> that point to headings for easy navigation.</p>
+
+                        <div class="textEditor">
+                            <code>
+                              <p><span class="blue">#</span> Table of Content:</p>
+                              <p><span class="blue">-</span> <span class="blue">[</span>Introduction of Markdown<span class="blue">](#</span>introduction-of-markdown<span class="blue">)</span></p>
+                              <p><span class="blue">-</span> <span class="blue">[</span>Why use Markdown<span class="blue">](#</span>why-use-markdown<span class="blue">)</span></p>
+                                
+                              <br>
+                              <br>
+
+                              <p><span class="blue">###</span> Introduction of Markdown</p>
+                              <p>Markdown is a lightweight markup language used to format plain text using simple, readable symbols.</p>
+
+                              <p><span class="blue">###</span> Why use Markdown</p>
+                              <p>Developers use Markdown to keep their documentation clean, versionable, and readable.</p>
+
+                              <p><span class="blue">###</span> Origin and Creator</p>
+                              <p>Markdown was created in 2004 by John Gruber</p>
+                            </code>
+                        </div>
+
+
+                        <!-- ======= Strikethrough Guide ======= -->
+                        <h3 id="strikethroughGuide">Strikethorugh</h3>
+                        <p>We use <code class="codeBox">~~</code> before and after the text indicate that something has
+                            been removed or is no longer relevant in markdown.</p>
+
+                        <div class="textEditor">
+                            <code>
+                               <p><span class="blue">~~</span>Hello, This is Strikethorugh example<span class="blue">~~</span></p>
+                            </code>
+                        </div>
+
+
+
+                        <!-- ======= Comments Guide ======= -->
+                        <h3 id="commentsGuide">Comments</h3>
+                        <p>We use HTML comment syntax <code class="codeBox">&lt;!-- comment --&gt;</code> to add
+                            comments in Markdown, which are not shown in the rendered output.
+                        </p>
+
+                        <div class="textEditor">
+                            <code>
+                               <p><span class="blue">&lt;!--</span>This is Comment<span class="blue">--&gt;</span></p>
+                            </code>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- ======================================== Main Section End ======================================== -->
+
+
+    <!-- ======================================== Footer Section Start ======================================== -->
+    <footer>
+        <div class="container">
+            <div class="row footerContainer">
+                <div class="col-10 col-md-4 aboutFumiki-Footer">
+                    <div class="fumikiContainer">
+                        <img src="assets/images/footer-logo.png" class="img-fluid footerImg" alt="markdown logo">
+                        <h4>Fumiki</h4>
+                    </div>
+                    <p>An open source project that guides you to master Markdown syntax easily</p>
+                    <p class="credit">Developed By <a href="https://github.com/premkrrajbhar" target="_blank">Prem Kumar
+                            Rajbhar</a> <br> <a href="https://github.com/premkrrajbhar/fumiki" target="_blank">(MIT
+                            LICENSE)</a></p>
+
+                </div>
+
+                <div class="col-10 col-md-3 importantLinks-Footer">
+                    <h4>Basic Syntax Links</h4>
+                    <ul>
+                        <li><a href="#headingsGuide">Headings</a></li>
+                        <li><a href="#paragraphsGuide">Paragraphs</a></li>
+                        <li><a href="#boldGuide">Bold</a></li>
+                        <li><a href="#italicGuide">Italic</a></li>
+                        <li><a href="#boldItalicGuide">Bold & Italic</a></li>
+                        <li><a href="#orderedListsGuide">Ordered Lists</a></li>
+                        <li><a href="#unorderedListsGuide">Unordered Lists</a></li>
+                        <li><a href="#codeBlockGuide">Code Block</a></li>
+                        <li><a href="#horizontalLineGuide">Horizontal Line</a></li>
+                        <li><a href="#inlineLinksGuide">Inline Links</a></li>
+                    </ul>
+                </div>
+
+                <!-- Important links -->
+                <div class="col-10 col-md-3 importantLinks2-Footer">
+                    <h4>Extended Syntax Links</h4>
+                    <ul>
+                        <li><a href="#referenceLinksGuide">Reference Links</a></li>
+                        <li><a href="#linkingFileGuide">Linking Files</a></li>
+                        <li><a href="#tableGuide">Tables</a></li>
+                        <li><a href="#taskListsGuide">Task Lists</a></li>
+                        <li><a href="#footNotesGuide">Foot Notes</a></li>
+                        <li><a href="#mentionsGuide">Mentions</a></li>
+                        <li><a href="#emojisGuide">Emojis</a></li>
+                        <li><a href="#htmlinGuide">HTML in Markdown</a></li>
+                        <li><a href="#tableofContentGuide">Table of Content</a></li>
+                        <li><a href="#strikethroughGuide">Strikethorugh</a></li>
+                        <li><a href="#commentsGuide">Comments</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <hr>
+            <p class="footer-copyright">&copy; 2025 Fumiki v1.0.0</p>
+            <p class="footer-copyright2">All rights reserved by <a href="https://github.com/premkrrajbhar"
+                    target="_blank">Prem Kumar Rajbhar</a></p>
+        </div>
+
+    </footer>
+
+
+    <!-- ======================================== Footer Section End ======================================== -->
+
+
+    <!-- ============ Jquery JS ============  -->
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+
+    <!-- ============ Webslideemnu JS ============  -->
+    <script src="scripts/webslidemenu.js"></script>
+
+    <!-- ============ Bootstrap JS ============  -->
+    <script src="scripts/bootstrap.bundle.min.js"></script>
+
+    
+    <!--
+    =========================================================
+    Project Name : Fumiki
+    Version      : v1.0.0
+    Initial Build: 2025-07-20
+    Type         : Open Source Web Project
+    License      : MIT License
+
+    Designed and Developed by Prem Kumar Rajbhar
+    Portfolio    : https://premkrrajbhar.github.io/Prem-Kumar-Rajbhar/
+    GitHub       : https://github.com/premkrrajbhar
+
+    © 2025 Prem Kumar Rajbhar. All rights reserved.
+    =========================================================
+    -->
+</body>
+
+</html>

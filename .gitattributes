@@ -1,0 +1,14 @@
+# Third-party CSS (excluded from GitHub language stats)
+styles/bootstrap.min.css
+styles/fontawesome.css
+styles/webslidemenu.css
+styles/webslidemenu02.css
+styles/white-red.css
+
+# Third-party JS (excluded from GitHub language stats)
+scripts/bootstrap.bundle.min.js
+scripts/jquery-3.6.0.min.js
+scripts/webslidemenu.js
+
+# Third-party Fonts (excluded from Github language stats)
+webfonts/** linguist-vendored

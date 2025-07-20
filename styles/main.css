@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+
+    font-family: "Kanit", sans-serif;
+
+}
+
+body {
+    scroll-padding-top: 56px;
+    scroll-behavior: smooth;
+}
+
+
+/* ============ Webslider Navbar Style Start ============ */
+.navbarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.navbarContainer img {
+    height: 50px;
+    margin-right: 5px;
+}
+
+.navbarContainer a {
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+
+.wsmobileheader {
+    z-index: 1000;
+}
+
+
+.leftlogo img {
+    height: 100px;
+}
+
+.leftlogo p {
+    font-weight: 300;
+    margin-bottom: 4px;
+}
+
+.leftlogo p:first-of-type {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.tagLine {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.wsmegamenu p {
+    opacity: 0.8;
+    font-size: 13px;
+}
+
+.navbar-Credit a {
+    color: black;
+    opacity: 0.8;
+}
+
+/* ============ Webslider Navbar Style End ============ */
+
+
+/* ============ Markdown Introduction Style Start ============ */
+.markdown-Introduction h2 {
+    font-size: 50px;
+    padding: 22px 28px;
+    background-color: #1f1f1f;
+    border-radius: 12px;
+    color: #b3b3b3;
+    opacity: 0.9;
+    margin-top: 30px;
+
+}
+
+.markdown-Introduction p {
+    font-size: 22px;
+    padding: 0 28px;
+    line-height: 38px;
+    color: black;
+    opacity: 0.9;
+    text-align: justify;
+    hyphens: auto;
+}
+
+
+.markdown-Introduction .codeBox {
+    color: #fdfdfd;
+    padding: 5px 10px;
+    background-color: #333333;
+    opacity: 1;
+    border-radius: 4px;
+}
+
+.markdown-Introduction a {
+    text-decoration: none;
+
+}
+
+.markdown-Introduction code {
+    color: #fdfdfd;
+    padding: 0 5px;
+    background-color: #333333;
+    opacity: 1;
+}
+
+.imgContainer {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.imgContainer img {
+    border-radius: 10px;
+    width: 90%;
+}
+
+.noteContainer {
+    border-width: 2px 2px 2px 10px;
+    border-style: solid;
+    background-color: #1f1f1f;
+    border-color: rgb(12, 84, 96);
+    border-radius: 5px;
+    margin: 0 30px;
+}
+
+.notePara {
+    line-height: normal !important;
+    font-size: 18px !important;
+    color: #b3b3b3 !important;
+    opacity: 1 !important;
+    margin: 0;
+    padding: 10px !important;
+}
+
+/* ============ Markdown Introduction Style End ============ */
+
+
+/* ============ Main Styles Start ============ */
+main {
+    margin: 1rem 0;
+}
+
+.GuideContainer {
+    display: flex;
+    align-items: start;
+    justify-content: space-evenly;
+}
+
+.leftSideBar {
+    border: 1px solid #cccccc;
+    padding: 3rem 1rem;
+    border-radius: 10px;
+    height: 600px;
+    overflow-y: scroll;
+    position: sticky;
+    top: 80px;
+    margin: 5rem 0;
+}
+
+.leftSideBar::-webkit-scrollbar {
+    display: none;
+}
+
+.rightContent {
+    margin-top: 52px;
+}
+
+.leftSideBar h5 {
+    font-weight: normal;
+}
+
+.leftSideBar ul {
+    list-style: none;
+}
+
+.leftSideBar ul li {
+    padding: 10px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.leftSideBar ul li:hover {
+    transform: translateX(10px);
+}
+
+.leftSideBar ul li a {
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+    opacity: 0.9;
+}
+
+
+.rightContent h2 {
+    font-size: 50px;
+}
+
+.rightContent .codeBox {
+    color: #fdfdfd;
+    padding: 5px 10px;
+    background-color: #333333;
+    opacity: 1;
+    border-radius: 4px;
+}
+
+.rightContent a {
+    color: #252525;
+    text-decoration: none;
+}
+
+.rightContent p {
+    font-size: 22px;
+    color: #252525;
+    margin-bottom: 5px;
+}
+
+.rightContent h3 {
+    font-size: 50px;
+    color: #222222;
+    margin-top: 25px;
+    margin-bottom: 0;
+
+}
+
+.rightContent .textEditor {
+    background: #222;
+    padding: 60px 50px;
+    border-radius: 12px;
+}
+
+.rightContent .textEditor code p {
+    font-size: 22px;
+    color: white !important;
+    margin: 5px 0;
+}
+
+.rightContent .blue {
+    color: #93d3ed;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.rightContent .varCol {
+    color: #569cd6;
+}
+
+.rightContent .ident {
+    color: #9cdcfe;
+}
+
+.rightContent .dataType {
+    color: #ce9178;
+}
+
+.rightContent .yellow {
+    color: #ffd700;
+}
+
+.rightContent pre {
+    font-size: 22px;
+    color: white !important;
+    margin: 5px 0;
+}
+
+.rightContent .note-Text {
+    font-size: 18px;
+}
+
+.rightContent .note-Text i {
+    color: #4aa7cc;
+}
+
+.rightContent .htmlTag_Example {
+    font-size: 22px;
+    color: white !important;
+    margin: 5px 0;
+}
+
+/* ============ Markdown Main Style End ============ */
+
+
+/* ============ Footer Style Start ============ */
+footer {
+    background-color: #1f1f1f;
+    padding-top: 2rem;
+}
+
+
+.footerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.fumikiContainer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+
+footer h4 {
+    color: #d2d2da;
+}
+
+.footerImg {
+    height: 60px;
+    margin-right: 5px;
+}
+
+.fumikiContainer h4 {
+    font-size: 32px;
+}
+
+.aboutFumiki-Footer p {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #bdbdc9;
+}
+
+.credit {
+    font-size: 15px !important;
+}
+
+.credit a {
+    text-decoration: none;
+    color: white;
+    opacity: 0.9;
+}
+
+.footerContainer ul {
+    list-style: none;
+    padding-left: 3px;
+}
+
+.footerContainer ul li {
+    transition: all 0.3s ease-in-out;
+    margin: 8px 0;
+}
+
+.footerContainer ul li:hover {
+    transform: translateX(8px);
+}
+
+
+.footerContainer ul li a {
+    text-decoration: none;
+    color: #bdbdc9;
+    opacity: 0.8;
+}
+
+.footerContainer ul li a:hover {
+    opacity: 0.9;
+    color: white;
+}
+
+
+.aboutFumiki-Footer,
+.importantLinks-Footer,
+.importantLinks2-Footer {
+    margin: 20px;
+}
+
+footer hr {
+    color: white;
+}
+
+.footer-copyright,
+.footer-copyright2 {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.footer-copyright {
+    margin: 5px;
+
+}
+
+.footer-copyright2 {
+    padding-bottom: 1rem;
+}
+
+.footer-copyright2 a {
+    text-decoration: none;
+    color: #bdbdc9;
+}
+
+/* ============ Footer Style End ============ */
+
+
+/* ============ Media queries Start ============ */
+@media(max-width: 768px) {
+    .markdown-Introduction h2 {
+        text-align: center;
+        font-size: 24px;
+    }
+
+
+
+    .markdown-Introduction p {
+        font-size: 20px;
+        line-height: normal;
+    }
+}
+
+/* ============ Media queries End ============ */
