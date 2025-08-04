@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
-
     font-family: "Kanit", sans-serif;
-
 }
 
 body {
@@ -197,8 +195,12 @@ main {
     text-decoration: none;
     color: black;
     opacity: 0.9;
+    transition: all 0.2s ease-in-out;
 }
 
+.leftSideBar ul li a:hover {
+    color: #0000ff;
+}
 
 .rightContent h2 {
     font-size: 50px;
@@ -236,6 +238,45 @@ main {
     padding: 60px 50px;
     border-radius: 12px;
 }
+
+.previewBtn {
+    border-radius: 10px;
+    border: none;
+    background: #222222;
+    color: white !important;
+    margin-top: 7px;
+    padding: 5px 20px;
+    margin-left: 1px;
+    transition: all 0.2s ease-in-out;
+}
+
+.modalCloseBtn {
+    position: absolute;
+    right: 10px;
+    top: 9px;
+    font-size: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 100%;
+}
+
+.modalCloseBtn:focus,
+.modalCloseBtn:active {
+    outline: none !important;
+    box-shadow: none;
+}
+
+
+.previewBtn:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.previewBtn:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
 
 .rightContent .textEditor code p {
     font-size: 22px;
@@ -285,7 +326,19 @@ main {
     margin: 5px 0;
 }
 
+
+
+.markdownEditorContainer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
 /* ============ Markdown Main Style End ============ */
+
+
 
 
 /* ============ Footer Style Start ============ */
