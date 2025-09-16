@@ -1,4 +1,4 @@
-# Fumiki [![Version](https://img.shields.io/badge/version-v1.0.0-black.svg)](./CHANGELOG.md)
+# Fumiki [![Version](https://img.shields.io/badge/version-v1.1.0-black.svg)](./CHANGELOG.md)
 
 **Fumiki** is a lightweight, beginner friendly website that helps users learn Markdown syntax with ease. Whether you're writing documentation, blog posts or a polished `README.md` file, Fumiki gives you a clear guide with examples to get started quickly and confidently.
 
