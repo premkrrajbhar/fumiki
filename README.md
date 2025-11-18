@@ -1,4 +1,4 @@
-# Fumiki [![Version](https://img.shields.io/badge/version-v1.1.0-black.svg)](./CHANGELOG.md)
+# Fumiki [![Version](https://img.shields.io/badge/version-v1.1.1-black.svg)](./CHANGELOG.md)
 
 **Fumiki** is a lightweight, beginner friendly website that helps users learn Markdown syntax with ease. Whether you're writing documentation, blog posts or a polished `README.md` file, Fumiki gives you a clear guide with examples to get started quickly and confidently.
 
@@ -21,6 +21,7 @@ Try it out here: **[Fumiki](https://premkrrajbhar.github.io/fumiki/)**
 - **Fully Responsive** Works perfectly on desktop, tablet, and mobile.
 - **SEO & Accessibility Ready** Includes Open Graph meta and semantic structure.
 - **Built with Simplicity in Mind** Just open and start learning.
+- **SEO Friendly** Optimized for Search Engine Optimization i.e. Implmented OnPage SEO and OffPage SEO.
 
 
 ## Technologies Used
@@ -64,7 +65,7 @@ Fumiki is open-source software released under the MIT License. This means you ar
 ## Changelog
 
 - See [CHANGELOG](./CHANGELOG.md) for a complete list of updates, fixes and version history.
-- **Current Version:** `v1.1.0`
+- **Current Version:** `v1.1.1`
 
 ## Contributing
 
