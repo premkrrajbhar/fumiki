@@ -12,3 +12,4 @@ scripts/webslidemenu.js
 
 # Third-party Fonts (excluded from Github language stats)
 webfonts/** linguist-vendored
+Fonts/** linguist-vendored
