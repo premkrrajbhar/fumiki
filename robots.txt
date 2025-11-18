@@ -1,0 +1,11 @@
+# Allow all search engines
+User-agent: *
+Disallow: /scripts/
+Disallow: /Fonts/
+Disallow: /webfonts/
+
+# Allow crawling of everything else, including images
+Allow: /
+
+# Sitemap location
+Sitemap: https://premkrrajbhar.github.io/fumiki/sitemap.xml
