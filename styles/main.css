@@ -1,7 +1,7 @@
 /* ===== Kanit Regular (400) ===== */
 @font-face {
   font-family: "Kanit";
-  src: url("/Fonts/Kanit-Regular.ttf") format("truetype");
+  src: url("../Fonts/Kanit-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
 }
