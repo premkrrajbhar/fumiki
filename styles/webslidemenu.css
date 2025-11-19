@@ -651,7 +651,7 @@ body.wsactive {
 }
 
 .wsmenucontainer {
-  background-image: url(../images/topbg02.jpg);
+  /* background-image: url(../images/topbg02.jpg); */
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
