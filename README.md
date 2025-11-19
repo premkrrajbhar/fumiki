@@ -21,7 +21,7 @@ Try it out here: **[Fumiki](https://premkrrajbhar.github.io/fumiki/)**
 - **Fully Responsive** Works perfectly on desktop, tablet, and mobile.
 - **SEO & Accessibility Ready** Includes Open Graph meta and semantic structure.
 - **Built with Simplicity in Mind** Just open and start learning.
-- **SEO Friendly** Optimized for Search Engine Optimization i.e. Implmented OnPage SEO and OffPage SEO.
+- **SEO Friendly** Optimized for Search Engine Optimization i.e. Implmented OnPage SEO and Technical SEO.
 
 
 ## Technologies Used
